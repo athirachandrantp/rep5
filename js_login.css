@@ -1,0 +1,42 @@
+.container{
+    border: 3px solid rgb(231, 151, 231);
+    width: 500px;
+    height: 259px;
+    background-color: rgb(236, 201, 236);
+}
+.email{
+    text-align: left;
+    margin-left: 20px;
+}
+#_email{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 80px;
+}
+.password{
+    text-align: left;
+    margin-left: 20px;
+}
+#_password{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 55px;
+}
+.login{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+}
+#_btn1{
+    background-color: rgb(133, 54, 133);
+    border-color: purple;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}

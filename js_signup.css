@@ -1,0 +1,104 @@
+.firstname{
+    text-align: left;
+    margin-left: 20px;
+}
+#_firstname{
+    border-radius: 25px;
+    border-color: rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 100px;
+}
+.lastname{
+    text-align: left;
+    margin-left: 20px;
+}
+#_lastname{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 110px;
+}
+.email{
+    text-align: left;
+    margin-left: 20px;
+}
+#_email{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 130px;
+}
+.mobile{
+    text-align: left;
+    margin-left: 20px;
+}
+#_mobile{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 125px;
+}
+.password{
+    text-align: left;
+    margin-left: 20px;
+}
+#_password{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 110px;
+}
+.cpassword{
+    text-align: left;
+    margin-left: 20px;
+}
+#_cpassword{
+    border-radius: 25px;
+    border-color:  rgb(211, 79, 211);
+    width: 300px;
+    height: 20px;
+    margin-left: 50px;
+}
+.signup{
+    text-align: center;
+}
+.container{
+    border: 3px solid rgb(231, 151, 231);
+    width: 600px;
+    height: 500px;
+    background-color: rgb(236, 201, 236);
+}
+.btn{
+    text-align: center;
+}
+#_btn{
+    background-color: rgb(133, 54, 133);
+    border-color: purple;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+#name_error{
+    margin-left: 200px;
+}
+#email_error{
+    margin-left: 200px;
+}
+#lname_error{
+    margin-left: 200px;
+}
+#mobile_error{
+    margin-left: 200px;
+}
+#password_error{
+    margin-left: 200px;
+}
+#cpassword_error{
+    margin-left: 200px;
+}

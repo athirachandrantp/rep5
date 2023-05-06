@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- <input type="button" name="" id="" value="click" onmouseover="alert('this is my first example')"> -->
+<button onclick="message()">Click here</button>
+<script>
+    function message(){
+        alert('hello');
+    }
+    var studentid=10
+    console.log('studentid is '+studentid)
+    var myname='athira';
+    console.log(myname)
+    var studentnames=['anu','ammu','appu'];
+    console.log(studentnames[1])
+    var studentdetails={rollno:1,name:'achu',address:'kozhikode',contact:'666666'}
+    console.log(studentdetails)
+    console.log(studentdetails['name'])
+    console.log(typeof(studentdetails))
+    // var fname=prompt('enter your name')
+    // console.log(fname)
+    // confirm('are u sure')
+    // message();
+    function addnumbers(a,b){
+        sum=a+b;
+        return sum;
+    }
+    // addnumbers(5,6)
+    // console.log(addnumbers(5,6))
+    x=8;
+    y=10;
+    result=addnumbers(x,y)
+    console.log('result is '+result)
+</script>
+</body>
+</html>

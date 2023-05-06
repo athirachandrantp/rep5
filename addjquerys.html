@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <label for="">enter first number</label>
+    <input type="text" name="" id="first">
+    <label for="">enter second number</label>
+    <input type="text" name="" id="second">
+    <button id="btn"> click</button>
+    <label for="">Result</label>
+    <input type="text" name="" id="Result">
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                var number1 =parseInt($('#first').val())
+                var number2 =parseInt($('#second').val())
+                var sum = number1 + number2
+                $('#Result').val(sum)
+            })
+        })
+    </script>
+</body>
+</html>

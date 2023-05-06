@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="calculator2.js"></script> -->
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div class="row">
+    <input class="screen" type="text" name="" id="screen">
+    <input class="clear" type="button" value="c" onclick="clear11()"><br>
+   <input class="one" type="button" value="7" onclick="btn_result(value)">
+   <input class="one" type="button" value="8" onclick="btn_result(value)">
+   <input class="one" type="button" value="9" onclick="btn_result(value)">
+   <input class="op" type="button" value="/" onclick="btn_result(value)"><br>
+   <input class="one" type="button" value="4" onclick="btn_result(value)">
+   <input class="one" type="button" value="5" onclick="btn_result(value)">
+   <input class="one" type="button" value="6" onclick="btn_result(value)">
+   <input class="op" type="button" value="*" onclick="btn_result(value)"><br>
+   <input class="one" type="button" value="1" onclick="btn_result(value)">
+   <input class="one" type="button" value="2" onclick="btn_result(value)">
+   <input class="one" type="button" value="3" onclick="btn_result(value)">
+   <input class="op" type="button" value="-" onclick="btn_result(value)"><br>
+   <input class="one" type="button" value="0" onclick="btn_result(value)">
+   <input class="one" type="button" value="." onclick="btn_result(value)">
+   <input class="aaa" type="button" value="=" onclick="result()">
+   <input class="op" type="button" value="+" onclick="btn_result(value)">
+
+        </div>
+</div>
+</div>
+</form>
+    <script>
+        var screen = document.getElementById('screen');
+
+        function btn_result(value){
+        screen.value += value;
+        }
+        function result(){
+            var result = eval(screen.value)
+            screen.value = result;
+        }
+        function clear11(){
+            screen.value ="";
+        }
+    </script>
+</body>
+</html>

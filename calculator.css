@@ -1,0 +1,48 @@
+.container{
+    width: 280px;
+    height: 250px;
+    border: 12px solid black;
+    margin: 180px 0 0 350px;
+    text-align: center;
+    border-radius: 10px;
+    /* border-color: white; */
+    border-style: groove;
+    border-color: white;
+}
+.one{
+    width: 55px;
+    height: 40px;
+    margin:  3px 3px 3px 3px;
+    border-radius: 5px;
+    border-color: white;
+    /* background-color: white; */
+    /* border-block-color: white; */
+    
+}
+.screen{
+    width: 150px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -30px;
+    background-color: lightskyblue;
+    
+}
+.clear{
+    width: 50px;
+    background-color: red;
+    color: white;
+    border-color: rgb(230, 126, 126);
+}
+.op{
+    width: 55px;
+    height: 40px;
+    background-color: rgb(236, 182, 46);
+}
+.aaa{
+    width: 55px;
+    height: 40px;
+    margin: 3px 3px 3px 3px;
+    background-color: rgb(61, 160, 221);
+    border-color: lightskyblue;
+}

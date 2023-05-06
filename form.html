@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <!-- <form action="" method="get"> -->
+        <label for="">Name</label>
+        <input type="text" name="name" id="_name"><br><br>
+        <label for="" id="name_error"></label><br>
+        <label for="">Contact number</label>
+        <input type="text" name="cno" id="_cno"><br><br>
+        <label for="" id="contactno_error"></label><br>
+        <label for="">Address</label>
+        <input type="text" name="adress" id="_address"><br><br>
+        <label for="" id="address_error"></label><br>
+        <label for="">Email</label>
+        <input type="text" name="email" id="_email"><br><br>
+        <label for="" id="email_error"></label><br>
+        <label for="">Username</label>
+        <input type="text" name="uname" id="_uname"><br><br>
+        <label for="" id="username_error"></label><br>
+        <label for="">Password</label>
+        <input type="password" name="password" id="_password"><br><br>
+        <label for="" id="password_error"></label><br>
+        <label for="">Confirm Password</label>
+        <input type="password" name="password2" id="_password2"><br><br>
+        <label for="" id="password2_error"></label><br>
+       
+        <button onclick="return form_validation()">Register</button>
+
+
+
+    <!-- </form> -->
+    </div>
+    <script>
+        status =1;
+        function form_validation(){
+            var name = document.getElementById('_name').value;
+            console.log(name);
+            var Contactnumber = document.getElementById('_cno').value;
+            console.log(Contactnumber);
+            var address = document.getElementById('_address').value;
+            console.log(address);
+            var email = document.getElementById('_email').value;
+            console.log(email);
+            var username = document.getElementById('_uname').value;
+            console.log(username);
+            var password = document.getElementById('_password').value;
+            console.log(password);
+            var password2 = document.getElementById('_password2').value;
+            console.log(password2);
+            if(name == ""){
+                name_error.innerHTML = "please enter your name";
+                name_error.style.display = "block";
+                name_error.style.color = "red";
+                _name.style.borderColor = "red";
+                status = 0;
+            }
+            else{
+                name_error.style.display = "none";
+                _name.style.borderColor = "black";
+                status = 1;
+            }
+            if(Contactnumber == ""){
+                contactno_error.innerHTML = "please enter your contact number";
+                contactno_error.style.display = "block";
+                contactno_error.style.color = "red";
+                _cno.style.borderColor = "red";
+                status = 0;
+                
+            }
+            else if(!phonenumber(Contactnumber)){
+             contactno_error.innerHTML = "Only enter valid numbers";
+             contactno_error.style.color = "red";
+             status =0;
+            }
+            else{
+                contactno_error.style.display = "none";
+                _cno.style.borderColor = "black";
+                status = 1;
+            }
+            if(address == ""){
+                address_error.innerHTML = "please enter your address";
+                address_error.style.display = "block";
+                address_error.style.color = "red";
+                _address.style.borderColor = "red";
+                status = 0;
+            }
+            else{
+                address_error.style.display = "none";
+                _address.style.borderColor = "black";
+                status = 1;
+            }
+            if(email == ""){
+                email_error.innerHTML = "please enter your email";
+                email_error.style.display = "block";
+                email_error.style.color = "red";
+                _email.style.borderColor = "red";
+                status = 0;
+            }
+            // else if(email) {
+            //     var re = /\S+@\S+\.\S+/;
+            //     return re.test(email);
+    
+            //     status = 0;
+            // }
+            else if(!validateEmail(email)){
+             email_error.innerHTML = "please enter valid email";
+             email_error.style.color = "red";
+             status =0;
+
+           }
+            else{
+                email_error.style.display = "none";
+                _email.style.borderColor = "black";
+                status = 1;
+            }
+            if(username == ""){
+                username_error.innerHTML = "please enter your username";
+                username_error.style.display = "block";
+                username_error.style.color = "red";
+                _uname.style.borderColor = "red";
+                status = 0;
+            }
+            else if(username.length < 3){
+                username_error.innerHTML = "must contain atleast 3 letters";
+                username_error.style.display = "block";
+                username_error.style.color = "blue";
+                status = 0;
+            }
+            else if(username.length > 15){
+                username_error.innerHTML = "not exceed 15 letters";
+                username_error.style.display = "block";
+                username_error.style.color = "rose";
+                status = 0;
+           }
+            else{
+                username_error.style.display = "none";
+                _uname.style.borderColor = "black";
+                status = 1;
+            }
+            if(password == ""){
+                password_error.innerHTML = "please enter your password";
+                password_error.style.display = "block";
+                password_error.style.color = "red";
+                _password.style.borderColor = "red";
+                status = 0;
+            }
+            // if(password.length < 3){
+            //     password_error.innerHTML = "length contain 3";
+            // }
+            // else if(checkpassword(password)){
+            //     password_error.style.display = "error";
+            // }
+            else{
+                password_error.style.display = "none";
+                _password.style.borderColor = "black";
+                status = 1;
+            }
+            if(password2 == ""){
+                password2_error.innerHTML = "please confirm your password";
+                password2_error.style.display = "block";
+                password2_error.style.color = "red";
+                _password2.style.borderColor = "red";
+                status = 0;
+            }
+            // else if(!checkpasswordsmatch(password, password2)){
+            //     password2_error.innerHTML = "passwords do not match";
+            //     password2_error.style.color = "red";
+            //     status = 0;
+            // }
+            else{
+                password2_error.style.display = "none";
+                _password2.style.borderColor = "black";
+                status = 1;
+            }
+           function validateEmail(email){
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            status = 0;
+            }
+            function phonenumber(Contactnumber){
+             var re = /^\d{10}$/;
+            return re.test(Contactnumber);
+            status = 0;
+            }
+
+
+
+            if(status ==0){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+    </script>
+</body>
+</html>

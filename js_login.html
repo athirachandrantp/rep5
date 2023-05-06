@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js_login.css">
+    <script src="js_login.js"></script>
+</head>
+<body>
+    <form action="" method="post">
+    <div class="container">
+        <div class="login">
+        <h2>Login form</h2>
+    </div><br>
+        <div class="email">
+            <label for="" id="email_error"></label>
+            <label for="">Email</label>
+            <input type="text" name="" id="_email">
+        </div><br><br>
+        <div class="password">
+            <label for="" id="password_error"></label>
+            <label for="">Password</label>
+            <input type="password" name="" id="_password">
+        </div><br><br>
+        <div class="btn">
+            <button id="_btn1" onclick="return form_validation()">Login</button>
+        </div>
+   
+    </div>
+</form>
+    <!-- <script> -->
+
+<!-- function form_validation(){
+    var email = document.getElementById('_email').value;
+    console.log(email);
+    var password = document.getElementById('_password').value;
+    console.log(password);
+if(email == ""){
+    email_error.innerHTML = 'please enter your email';
+    email_error.style.display = "block";
+    email_error.style.color = "red";
+    return false;
+}
+else{
+    email_error.style.display = "none";
+    return true;
+}
+if(password == ""){
+    password_error.innerHTML = 'please enter the password';
+    password_error.style.display = "block";
+    password_error.style.color = "red";
+    return false;
+}
+else{
+    password_error.style.display = "null";
+    return true;
+}
+} -->
+
+    <!-- </script> -->
+</body>
+</html>

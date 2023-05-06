@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        #div{
+            height: 800px;
+            width: 500px;
+            border: solid 2px;
+            background-color: aquamarine;
+            display: none;
+
+        }
+        #two{
+            height: 500px;
+            width: 500px;
+            border: solid 1px;
+            background-color: bisque;
+        }
+        .para{
+            color: rgb(63, 165, 42);
+        }
+    </style>
+</head>
+<body>
+    <button id="down">Slide down</button>
+    <div id="div"></div>
+    <button id="up">Slide up</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora commodi eius maxime, veniam saepe esse tenetur minus voluptates repellendus libero distinctio amet doloremque dolores alias totam hic, dignissimos provident?</p>
+    <button id="one">click</button>
+    <div id="two">
+        <h1>hello</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit hic aliquam delectus magni incidunt, numquam atque corporis nostrum obcaecati repellat distinctio repudiandae ducimus provident natus debitis odio ipsam sequi.</p>
+
+    </div>
+        <button id="btn">click</button>
+    <script>
+        $(document).ready(function(){
+            $('#down').click(function(){
+                $('#div').slideDown(4000)
+
+            });
+            $('#up').click(function(){
+                // $('div').slideUp(4000)
+                // $('#div').slideToggle()
+                // $('div').fadeTo(4000,0.4)
+                $('#div').slideDown().delay(6000).slideUp()
+            });
+            $('#one').click(function(){
+                // alert($('p').html())
+                // $('p').html('welcome')
+                $('p').css("background-color", "red")
+            })
+            $('#btn').click(function(){
+              //  $('#two').empty()
+              //$('#two').remove()
+              $('p').addClass("para")
+            })
+        });
+    </script>
+</body>
+</html>

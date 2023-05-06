@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br><br>
+    <form action="" method="get">
+        <label for="">Enter first number</label>
+        <input type="text" name="fnum" id="fnum">
+        <label for="">Enter second number</label>
+        <input type="text" name="snum" id="snum"><br>
+        <button onclick="return addnumbers()">+</button>
+        <button onclick="return subnumbers()">-</button>
+        <button onclick="return mulnumbers()">*</button>
+        <button onclick="return divnumbers()">/</button><br><br>
+        <label for="">result</label>
+        <input type="text" name="result" id="result">
+
+    </form>
+    <script>
+        function addnumbers(){
+            var num1 = parseInt(document.getElementById('fnum').value);
+            var num2 = parseInt(document.getElementById('snum').value);
+            var sum = num1 + num2;
+          
+            document.getElementById('result').value = sum;
+            return false;
+            
+        }
+        function subnumbers(){
+            var num1 = parseInt(document.getElementById('fnum').value);
+            var num2 = parseInt(document.getElementById('snum').value);
+            var sum = num1 - num2;
+          
+            document.getElementById('result').value = sum;
+            return false;
+            
+        }
+        function mulnumbers(){
+            var num1 = parseInt(document.getElementById('fnum').value);
+            var num2 = parseInt(document.getElementById('snum').value);
+            var sum = num1 * num2;
+          
+            document.getElementById('result').value = sum;
+            return false;
+            
+        }
+        function divnumbers(){
+            var num1 = parseInt(document.getElementById('fnum').value);
+            var num2 = parseInt(document.getElementById('snum').value);
+            var sum = num1 / num2;
+          
+            document.getElementById('result').value = sum;
+            return false;
+            
+        }
+    </script>
+</body>
+</html>
